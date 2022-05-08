@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/KairaAnton/figmaPage/static/css/main.43d042d7.css",
+    "main.js": "/KairaAnton/figmaPage/static/js/main.16174ffd.js",
+    "static/js/787.573ea6bb.chunk.js": "/KairaAnton/figmaPage/static/js/787.573ea6bb.chunk.js",
+    "index.html": "/KairaAnton/figmaPage/index.html",
+    "main.43d042d7.css.map": "/KairaAnton/figmaPage/static/css/main.43d042d7.css.map",
+    "main.16174ffd.js.map": "/KairaAnton/figmaPage/static/js/main.16174ffd.js.map",
+    "787.573ea6bb.chunk.js.map": "/KairaAnton/figmaPage/static/js/787.573ea6bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43d042d7.css",
+    "static/js/main.16174ffd.js"
+  ]
+}
