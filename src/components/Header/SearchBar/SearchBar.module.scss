@@ -1,0 +1,32 @@
+.subSearch{
+    display: flex;
+    align-items: center;
+}
+
+.glass{
+    height: 18px;
+    width: 18px;
+}
+
+.searchBar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10.5px 280px;
+}
+
+.search {
+    border: none;
+    padding: 0 8px;
+}
+
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language span{
+padding: 0 6px ;
+}
+

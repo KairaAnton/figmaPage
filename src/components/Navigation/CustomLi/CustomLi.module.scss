@@ -1,0 +1,32 @@
+
+.navLi{
+    position: relative;
+    padding:0 15px;
+    size: 16px;
+    line-height: 16px;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+.navLi svg{
+    padding-bottom: 2px;
+}
+
+.subNav{
+display: none;
+position: absolute;
+top: 100%;
+}
+
+.subNav li{
+    padding: 3px;
+    min-width:150% ;
+}
+
+.navLi:hover .subNav{
+display: block;
+}
+
+li:hover{
+    cursor: pointer;
+}
