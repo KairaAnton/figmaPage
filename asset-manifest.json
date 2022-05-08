@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/KairaAnton/figmaPage/static/css/main.43d042d7.css",
-    "main.js": "/KairaAnton/figmaPage/static/js/main.16174ffd.js",
-    "static/js/787.573ea6bb.chunk.js": "/KairaAnton/figmaPage/static/js/787.573ea6bb.chunk.js",
-    "index.html": "/KairaAnton/figmaPage/index.html",
-    "main.43d042d7.css.map": "/KairaAnton/figmaPage/static/css/main.43d042d7.css.map",
-    "main.16174ffd.js.map": "/KairaAnton/figmaPage/static/js/main.16174ffd.js.map",
-    "787.573ea6bb.chunk.js.map": "/KairaAnton/figmaPage/static/js/787.573ea6bb.chunk.js.map"
+    "main.css": "/figmaPage/static/css/main.43d042d7.css",
+    "main.js": "/figmaPage/static/js/main.cfd6c3b5.js",
+    "static/js/787.573ea6bb.chunk.js": "/figmaPage/static/js/787.573ea6bb.chunk.js",
+    "index.html": "/figmaPage/index.html",
+    "main.43d042d7.css.map": "/figmaPage/static/css/main.43d042d7.css.map",
+    "main.cfd6c3b5.js.map": "/figmaPage/static/js/main.cfd6c3b5.js.map",
+    "787.573ea6bb.chunk.js.map": "/figmaPage/static/js/787.573ea6bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.43d042d7.css",
-    "static/js/main.16174ffd.js"
+    "static/js/main.cfd6c3b5.js"
   ]
 }
