@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.scss';
 
-const TextParagraph = ({ content, className}) => {
+const TextParagraph = ({ children, className}) => {
     return (
         <p className={`paragraph ${className} `}>
-            {content}
+            {children}
         </p>
     );
 }
