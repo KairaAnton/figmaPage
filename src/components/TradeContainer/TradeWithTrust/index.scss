@@ -1,0 +1,57 @@
+$color-blu: #1234E8;
+$size-img:64px;
+
+%img-absolute {
+    position: absolute;
+    color: $color-blu;
+    opacity: .06;
+}
+
+%little-img{
+    color: $color-blu;
+}
+
+.trust-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+    &__img-column {
+        @extend %img-absolute;
+        width: 328px;
+        height: 420px;
+    }
+
+    &__img-safe {
+        @extend %img-absolute;
+        width: 292px;
+        height: 305px;
+    }
+
+    &__img-lock {
+        @extend %img-absolute;
+        width: 441;
+        height: 441px;
+    }
+
+    &__rules-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__rule-column {
+        width: 50px;
+        height: $size-img;
+    }
+
+    &__rule-safe {
+        width: $size-img;
+        height: 67px;
+    }
+
+    &__rule-lock {
+        width: $size-img;
+        height: $size-img;
+    }
+}

@@ -1,0 +1,33 @@
+.search-bar {
+    display: flex;
+    width: 1230px;
+    max-height: 45px;
+    justify-content: space-between;
+    padding: 10.5px 0;
+
+    &__sub-search {
+        display: flex;
+        align-items: center;
+    }
+
+    &__glass {
+        height: 18px;
+        width: 18px;
+    }
+
+
+    &__search {
+        border: none;
+        padding: 0 8px;
+    }
+
+    &__language {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__language span {
+        padding: 0 6px;
+    }
+}

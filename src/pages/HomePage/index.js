@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import styles from './HomePage.module.scss';
+import './index.scss';
+import TradeContainer from '../../components/TradeContainer';
 
 const HomePage = () => {
     return (
-        <section className={styles.homePage}>
+        <section className='home-page'>
             <Header />
+            <TradeContainer/>
             <Footer />
         </section>
     );
