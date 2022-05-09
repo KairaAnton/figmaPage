@@ -10,10 +10,10 @@ import Button from '../../Button';
 const TradeDemo = () => {
     const contentTitle = 'Trade CFDs on Shares, Indices, Forex and Cryptocurrencies';
     const contentP = 'Reliable, Simple, Innovative. Join millions who have already traded with Nordic Association of Brokers.'
-    return (
+    return (/*
         <div className='trade-demo'>
             
-                <img src={noteLeft} alt='logo' className='trade-demo__left' />
+                <img src={noteLeft} alt='logo' className='trade-demo__left' /> модификатор
                 <img src={noteRight} alt='logo' className='trade-demo__right' />
             
             <section className='trade-demo__content'>
@@ -26,7 +26,25 @@ const TradeDemo = () => {
                     <Button className='trade-demo__button-white' content='Try Free Demo'/>
                 </article>
             </section>
-        </div>
+        </div>*/
+
+        <section className='trade-demo'>
+            <div className="trade-demo__container _container">
+                <img src={noteLeft} alt='logo' className='trade-demo__img trade-demo__left' />
+                <img src={noteRight} alt='logo' className='trade-demo__img trade-demo__right' />
+
+                <div className='trade-demo__content'>
+                    <img src={arrow} alt='logo' />
+                    <TextTitle className='trade-demo__title'>{contentTitle}</TextTitle>
+                    <TextParagraph className='trade-demo__paragraph' >{contentP}</TextParagraph>
+                    <article className='trade-demo__button-container' >
+                        <Button className='trade-demo__button-blue' >Start Trading Now</Button>
+                        <span>or</span>
+                        <Button className='trade-demo__button-white'>Try Free Demo</Button>
+                    </article>
+                </div>
+            </div>
+        </section>
     );
 }
 
