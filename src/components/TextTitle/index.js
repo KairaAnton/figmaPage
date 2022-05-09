@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.scss';
 
-const TextTitle = ({ content,className }) => {
+const TextTitle = ({ children,className }) => {
     return (
         <h1 className={`text-title ${className}`}>
-            {content}
+            {children}
         </h1>
     );
 }
