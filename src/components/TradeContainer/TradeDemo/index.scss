@@ -1,83 +1,85 @@
 .trade-demo {
-  //  width: 1230px;
-  //   height: 660px; ограничивать высоту нужно max-height
-  &__container {
-    position: relative;
-  }
- &__img{
-   position: absolute;
-   height: 600px;
-   width: 1069px;
- }
-  &__left {
-    left: -1150px;
-    padding-top: 75px;
-  }
-
-  &__right {
-    left: 800px;
-    padding-top: 75px;
-  }
-
-  &__content {
-    position: relative;
-    max-width: 638px;
-    max-height: 503px;
-    padding: 82px 0;
-  }
-
-  &__content img {
-    position: absolute;
-    width: 100px;
-    left: -35px;
-  }
-
-  &__title {
-    padding: 20px 0 0;
-    line-height: 74px;
-  }
-
-  &__paragraph {
-    padding: 40px 0;
-    max-width: 600px;
-    line-height: 42px;
-    word-spacing: 3px;
-    letter-spacing: 1.4px;
-  }
-
-  &__button-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 80%;
-  }
+    justify-content: flex-start;
+    position: relative;
+    width: 1230px;
+    height: 660px;
 
-  &__button-container span {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
-  }
+    &__left {
+        position: absolute;
+        height: 600px;
+        width: 1069px;
+        left: -1150px;
+        padding-top: 75px;
+    }
 
-  &__button-blue {
-    background-color: #1234E8;
-    border: none;
-    border-radius: 5px;
-    color: #FFFFFF;
-    padding: 21px 56px 20px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 14px;
-  }
+    &__right {
+        position: absolute;
+        height: 600px;
+        width: 1069px;
+        left: 800px;
+        padding-top: 75px;
+    }
 
-  &__button-white {
-    background-color: #FFFFFF;
-    border: 2px solid #1234E8;
-    border-radius: 5px;
-    color: #1234E8;
-    padding: 21px 55px 20px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 14px;
-  }
+    &__content {
+        position: relative;
+        max-width: 638px;
+        max-height: 503px;
+        padding: 82px 0;
+    }
+
+    &__content img {
+        position: absolute;
+        width: 100px;
+        left: -35px;
+    }
+
+    &__title {
+        padding: 20px 0 0;
+        line-height: 74px;
+    }
+
+    &__paragraph {
+        padding: 40px 0;
+        max-width: 600px;
+        line-height: 42px;
+        word-spacing: 3px;
+        letter-spacing: 1.4px;
+    }
+
+    &__button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    &__button-container span{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    &__button-blue {
+        background-color: #1234E8;
+        border: none;
+        border-radius: 5px;
+        color: #FFFFFF;
+        padding: 21px 56px 20px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    &__button-white {
+        background-color: #FFFFFF;
+        border: 2px solid #1234E8 ;
+        border-radius: 5px;
+        color: #1234E8;
+        padding: 21px 55px 20px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+    }
 
 }
