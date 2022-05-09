@@ -6,7 +6,7 @@ import TextTitle from '../../TextTitle';
 import TradeRule from './TradeRule';
 import './index.scss';
 
-
+//здесь порефактори по аналогии с преддущими изменениями
 const TradeWithTrust = () => {
 
     const text = 'Trade with Trust';
