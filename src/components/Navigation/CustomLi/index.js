@@ -3,10 +3,10 @@ import ArrowToDown from '../../ArrowToDown';
 import SubNav from '../SubNav';
 import styles from './CustomLi.module.scss';
  
-const CustomLi = ({content}) => {
+const CustomLi = ({children}) => {
     
     return (
-        <li className={styles.navLi}>{content} <ArrowToDown />
+        <li className={styles.navLi}>{children} <ArrowToDown />
                 <SubNav className={styles.subNav} />
             </li>
     );

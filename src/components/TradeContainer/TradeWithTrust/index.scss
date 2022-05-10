@@ -1,5 +1,6 @@
 $color-blu: #1234E8;
-$size-img:64px;
+$size-img: 64px;
+$flex-display: flex;
 
 %img-absolute {
     position: absolute;
@@ -7,37 +8,47 @@ $size-img:64px;
     opacity: .06;
 }
 
-%little-img{
+%little-img {
     color: $color-blu;
 }
 
-.trust-container {
-    display: flex;
-    flex-direction: column;
+.trust-trade {
     position: relative;
 
+    &__container {
+        display: $flex-display;
+        flex-direction: column;
+        align-items: center;
+        padding:169px 0 71px;
+    }
 
     &__img-column {
         @extend %img-absolute;
-        width: 328px;
-        height: 420px;
+        width: 441;
+        height: 441px;
+        left: 36px;
+        bottom: 0;
     }
 
     &__img-safe {
         @extend %img-absolute;
         width: 292px;
         height: 305px;
+        bottom: -58px;
+        z-index: -1;
     }
 
     &__img-lock {
         @extend %img-absolute;
-        width: 441;
-        height: 441px;
+        width: 328px;
+        height: 420px;
+        right: -100px;
     }
 
-    &__rules-container{
-        display: flex;
+    &__rules-container {
+        display: $flex-display;
         justify-content: space-between;
+        margin: 90px 0 60px;
     }
 
     &__rule-column {
@@ -53,5 +64,9 @@ $size-img:64px;
     &__rule-lock {
         width: $size-img;
         height: $size-img;
+    }
+
+    &__button{
+        z-index:-2;
     }
 }

@@ -1,13 +1,23 @@
 .search-bar {
     display: flex;
-   // width: 1230px;
     max-height: 45px;
     justify-content: space-between;
     padding: 10.5px 0;
 
+    &__container{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__sub-search {
         display: flex;
         align-items: center;
+    }
+
+    &__button{
+        background-color: white;
+        border: none;
     }
 
     &__glass {

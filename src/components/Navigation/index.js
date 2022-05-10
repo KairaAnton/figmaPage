@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from './Navigation.module.scss'
+import './index.scss'
 import CustomLi from './CustomLi';
 
 /*нужно поменять файлик со стилями*/
 
 const Navigation = () => {
     return (
-        <ul className={styles.navigation}>
-            <CustomLi content="Instruments Categories " />
-            <CustomLi content="Tools" />
-            <CustomLi content="Company" />
+        <ul className='navigation'>
+            <CustomLi>Instruments Categories </CustomLi>
+            <CustomLi>Tools</CustomLi>
+            <CustomLi>Company</CustomLi>
         </ul>
     );
 }

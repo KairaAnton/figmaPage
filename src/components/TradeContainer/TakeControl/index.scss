@@ -1,0 +1,97 @@
+.take-controle {
+   
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+
+
+
+}
+
+.control-img-container {
+    position: relative;
+
+    &__ellipse {
+        position: absolute;
+        height: 358px;
+        width: 358px;
+        border-radius: 50%;
+        background-color: #1234E1;
+        opacity: .8;
+        bottom: 20px;
+        left: 0;
+    }
+
+    &__left-img {
+        position: absolute;
+        height: 290px;
+        width: 210px;
+        bottom: -10px;
+        left: -95px;
+    }
+
+    &__right-img {
+        position: absolute;
+        height: 530px;
+        width: 351px;
+        bottom: 0;
+        left: 80px;
+    }
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+    &__span-container {
+        max-width: 480px;
+        padding: 20px 0;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 42px;
+        opacity: .5;
+    }
+
+    &__list {
+        line-height: 42px;
+    }
+
+    &__list li {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 42px;
+        letter-spacing: 1.5px;
+    }
+
+    &__list li::before {
+        content: '';
+        width: 18px;
+        height: 13px;
+        display: inline-block;
+        background-image: url('../../../images/checkMark.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 10px -4px 0;
+    }
+
+    &__button-container {
+        display: flex;
+        width: 93%;
+        justify-content: space-between;
+        padding-top: 60px;
+    }
+
+    &__button-right {
+        border-color: #111111;
+        color: #111111;
+        opacity: .5;
+    }
+
+}
+

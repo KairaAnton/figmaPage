@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 
-const TextTitle = ({ children,className }) => {
+const TextTitle = ({ className ,children}) => {
     return (
         <h1 className={`text-title ${className}`}>
             {children}

@@ -9,7 +9,7 @@ const SerchBar = () => {
         <section className='search-bar'>
             <div className="search-bar__container _container">
                 <article className='search-bar__sub-search'>
-                    <button > {/*здесь кнопка*/}
+                    <button className='search-bar__button'> {/*здесь кнопка*/}
                         <img src={glass} className='search-bar__glass' alt='logo' />
                     </button>
                     <input className='search-bar__search' placeholder='Search' />

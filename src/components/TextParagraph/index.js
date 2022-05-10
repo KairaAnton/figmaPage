@@ -9,5 +9,4 @@ const TextParagraph = ({ children, className}) => {
     );
 }
 
-
 export default TextParagraph;

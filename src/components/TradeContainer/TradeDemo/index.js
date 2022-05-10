@@ -32,15 +32,16 @@ const TradeDemo = () => {
             <div className="trade-demo__container _container">
                 <img src={noteLeft} alt='logo' className='trade-demo__img trade-demo__left' />
                 <img src={noteRight} alt='logo' className='trade-demo__img trade-demo__right' />
+                <div className='trade-demo__ellipse' />
 
                 <div className='trade-demo__content'>
                     <img src={arrow} alt='logo' />
                     <TextTitle className='trade-demo__title'>{contentTitle}</TextTitle>
                     <TextParagraph className='trade-demo__paragraph' >{contentP}</TextParagraph>
                     <article className='trade-demo__button-container' >
-                        <Button className='trade-demo__button-blue' >Start Trading Now</Button>
+                        <Button className='trade-demo__button-blue' type='blue'>Start Trading Now</Button>
                         <span>or</span>
-                        <Button className='trade-demo__button-white'>Try Free Demo</Button>
+                        <Button className='trade-demo__button-white' type='white'>Try Free Demo</Button>
                     </article>
                 </div>
             </div>
