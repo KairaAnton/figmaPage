@@ -1,7 +1,5 @@
 .trade-demo {
 
-  //  width: 1230px;
-  //   height: 660px; ограничивать высоту нужно max-height
   &__container {
     position: relative;
   }
@@ -57,8 +55,6 @@
     padding: 40px 0;
     max-width: 600px;
     line-height: 42px;
-    word-spacing: 3px;
-    letter-spacing: 1.4px;
   }
 
   &__button-container {

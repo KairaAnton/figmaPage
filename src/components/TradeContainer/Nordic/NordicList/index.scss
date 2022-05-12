@@ -1,0 +1,32 @@
+.nordic-list {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    :last-child{
+        border: none;
+        padding-right: 0;
+    }
+
+    li{
+        border-right: 1px solid rgba($color: #111111, $alpha: .25);
+        padding-right: 150px;       
+    }    
+
+    &__h1 {
+        color: #1234E8;
+        font-size: 54px;
+    }
+
+    &__h2 {
+        font-size: 24px;
+        padding: 15px 0 30px;
+
+    }
+
+    &__paragraph {
+        opacity: .5;
+    }
+
+}

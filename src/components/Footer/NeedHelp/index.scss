@@ -1,0 +1,34 @@
+.need-help {
+    background-color: #1234E8;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0 41px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img {
+        position: absolute;
+        height: 254px;
+        width: 254px;
+        top: -60px;
+        right: 170px;
+    }
+
+
+    &__h1 {
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    &__button img {
+        height: 24px;
+        width: 24px;
+        margin-right: 10px;
+    }
+
+
+
+}

@@ -1,0 +1,50 @@
+.trader-guide {
+
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img-container {
+        position: relative;
+    }
+
+    &__img-container img {
+        position: absolute;
+        left: -100px;
+        top: 0;
+        width: 560px;
+        height: 452px;
+    }
+
+    &__ellipse {
+        position: absolute;
+        width: 209px;
+        height: 209px;
+        top: -50px;
+        left: -150px;
+        transform: rotate(90deg);
+        border: 10px dashed #1234E1;
+        border-radius: 50%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 700px;
+        padding: 69px 0 68px;
+    }
+
+    &__paragraph {
+        padding: 20px 0 80px;
+        //max-width: 900px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 42px;
+        opacity: .5;
+    }
+
+}

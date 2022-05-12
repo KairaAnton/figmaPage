@@ -1,0 +1,42 @@
+.footer-nav{
+
+    &__navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0 60px;
+    }
+
+    &__a:hover{
+        color: green;
+        transition-duration: 1.5s;
+    }
+
+    &__paragraph{
+        max-width: 93%;
+        margin: 20px 0 60px;
+    }
+    
+
+    &__paragraph span{
+        opacity: .5;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 2%;
+        line-height: 28px;
+        
+    }    
+
+        &__risks h2{
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 2%;
+            line-height: 16px;
+        }
+
+        a{
+            color:#111111;
+        }
+    
+
+}

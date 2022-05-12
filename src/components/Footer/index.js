@@ -1,11 +1,14 @@
 import React from 'react';
+import AboutUs from './AboutUs';
+import FooterNav from './FooterNav';
+import NeedHelp from './NeedHelp';
 
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer__container _container">
-
-            </div>
+            <NeedHelp />
+            <FooterNav />
+            <AboutUs />
         </footer>
     );
 }

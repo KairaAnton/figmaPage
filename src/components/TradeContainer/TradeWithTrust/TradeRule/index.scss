@@ -1,11 +1,12 @@
 .rule-container{
     display: flex;
     flex-direction: column;
-    width: 390px;
+    width: 33.333%;
     align-items: center;
 
     &__text{
-        width: 80%;
+        text-align: center;
+        max-width: 85%;
         font-weight: 500;
         font-size: 14px;
         line-height: 28px;

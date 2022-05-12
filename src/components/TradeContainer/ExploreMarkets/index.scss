@@ -9,9 +9,9 @@
 }
 
 .explore {
-    padding: 105px 0 245px;
+    padding: 105px 0 299px;
 
-    &__container{
+    &__container {
         display: flex;
         justify-content: space-between;
     }
@@ -20,7 +20,7 @@
 .content-container {
 
     &__paragraph {
-        max-width: 480px;
+        max-width: 600px;
         padding: 20px 0;
         font-weight: 400;
         font-size: 24px;
@@ -59,11 +59,11 @@
     }
 }
 
-.explore-img-container{
+.explore-img-container {
 
     position: relative;
 
-    &__ellipse-blue{
+    &__ellipse-blue {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,14 +74,15 @@
         background-color: #1234E1;
     }
 
-    &__ellipse-white{
+    &__ellipse-white {
         height: 288px;
         width: 288px;
         border-radius: 50%;
-        border:10px dashed white;
+        border: 10px dashed white;
+        transform: rotate(90deg);
     }
 
-    &__second-phones{
+    &__second-phones {
         position: absolute;
         width: 1025px;
         height: 986px;

@@ -1,11 +1,12 @@
 %btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     padding: 21px 55px 20px;
     font-weight: 600;
     font-size: 14px;
-    line-height: 14px;
-    z-index: 1;
-    
+    line-height: 14px;    
 }
 
 %btn-hover{

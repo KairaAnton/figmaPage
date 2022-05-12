@@ -1,9 +1,8 @@
 .nav-li {
     position: relative;
-    padding: 0 15px;
+    margin: 0 15px;
     size: 16px;
     line-height: 16px;
-    font-family: Montserrat;
     font-size: 16px;
    
 
@@ -21,6 +20,7 @@
     }
 
     &__sub-nav li {
+        white-space: nowrap;
         padding: 3px 0;
     }
 }

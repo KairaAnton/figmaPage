@@ -1,0 +1,14 @@
+.about-us{
+    background-color: #F6F6F6;
+    
+    &__text-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2%;
+        opacity: .2;
+    }
+}
