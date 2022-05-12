@@ -18,9 +18,8 @@ const TraderGuide = () => {
                     <TextParagraph className='trader-guide__paragraph'>Discover the basics of CFD trading and understand commonly-used terms by accessing our free and intuitive video guide.</TextParagraph>
                     <Button type='white' >Watch Videos</Button>
                 </article>
-
+                <div className='trader-guide__right-ellipse'/>
             </div>
-
         </section>
     );
 }

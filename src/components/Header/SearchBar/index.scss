@@ -16,7 +16,7 @@
     padding: 10.5px 0;
 
     &__container {
-        width: 100vw;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -56,25 +56,35 @@
 
     &__arrow {
         margin: 5px 0 0 5px;
+        transition-duration: 1s;
+
     }
 
     &__language-container:hover &__arrow {
         margin: 5px 0 0 5px;
         transform: rotate(180deg);
+        transition-duration: 1s;
+
     }
 
     &__language-container:hover &__select {
-        z-index: 1;
+        visibility: visible;
         display: inline-block;
         opacity: 1;
+        transition-duration: 1.5s;
+        transform: rotateY(0);
+
     }
 
     &__select {
-        z-index: 990;
-        position: absolute;
+        background-color: #FFFFFF;
         opacity: 0;
+        position: absolute;
+        visibility: hidden;
         top: 100%;
-        transition-duration: 1s;
+        z-index: 99;
+        transition-duration: 1.5s;
+        transform: rotateY(90deg);
     }
 
     &__select div:hover {
@@ -84,6 +94,8 @@
 
     &__select div {
         display: flex;
+        transition-duration: 1.5s;
+
     }
 
     &__div-Ru::before {

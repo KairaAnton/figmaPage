@@ -4,10 +4,12 @@
     size: 16px;
     line-height: 16px;
     font-size: 16px;
-   
+    cursor: pointer;
 
-    svg {
+
+    &__arrow {
         margin: 0 0 2px 4px;
+        transition-duration: 1.5s;
     }
 
     &__sub-nav {
@@ -16,6 +18,7 @@
         position: absolute;
         transition: 1s;
         left: 0;
+        transition-duration: 1.5s;
         transform: rotateY(90deg);
     }
 
@@ -27,24 +30,25 @@
 
 .nav-li:hover .nav-li {
     &__sub-nav {
+        min-width: 100%;
         z-index: 1;
         opacity: 1;
         transform: rotateY(0);
     }
 
-    &__sub-nav li{
-transition-duration: 2s;    }
+    &__sub-nav li {
+        transition-duration: 1.5s;
+        cursor: pointer;
+    }
 
-    &__sub-nav li:hover{
+    &__sub-nav li:hover {
+        transition-duration: 1.5s;
         background-color: green;
     }
 
     &__arrow {
         margin: 0 0 2px 4px;
         transform: rotate(180deg);
+        transition-duration: 1.5s;
     }
-}
-
-li:hover {
-    cursor: pointer;
 }

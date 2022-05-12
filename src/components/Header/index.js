@@ -1,14 +1,10 @@
 import React from 'react';
-import './index.scss';
 import NavBar from './NavBar';
 import SerchBar from './SearchBar';
+import './index.scss';
 
 const Header = () => {
-    return (/*
-        <section className='container-one'>
-            <SerchBar />
-            <NavBar />
-        </section>*/
+    return (
         <header className='header'>
             <SerchBar />
             <NavBar />

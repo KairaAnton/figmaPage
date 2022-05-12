@@ -1,6 +1,7 @@
 .need-help {
     background-color: #1234E8;
 
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -21,6 +22,10 @@
     &__h1 {
         color: #FFFFFF;
         font-family: 'Montserrat', sans-serif;
+    }
+
+    &__button {
+        border: none;
     }
 
     &__button img {

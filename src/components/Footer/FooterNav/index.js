@@ -18,6 +18,7 @@ const FooterNav = () => {
                 <article className='footer-nav__navigation'>
                     <img src={logo} alt='logo' />
                     <Navigation />
+                    
                 </article>
                 <article className='footer-nav__risks'>
                     <h3>Уведомление о рисках:</h3>

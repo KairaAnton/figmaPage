@@ -4,7 +4,6 @@
 
     &__header-nav {
         display: flex;
-        max-width: 1230px;
         max-height: 90px;
         align-items: center;
         justify-content: space-between;
@@ -35,7 +34,17 @@
         width: 18px;
         opacity: .5;
         padding: 7px 0 0;
+    }
+    &__user-button{
+        cursor: pointer;
+        background:none;
+        border: none;
+        transition-duration: 1.5s;
+    }
 
+    &__user-button:hover{
+        color: green;
+        transition-duration: 1.5s;
     }
 
     &__button {

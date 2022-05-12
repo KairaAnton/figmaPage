@@ -32,7 +32,7 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 52px;
-        color: #1234E1;
+        color: #1234E8;
     }
 
     &__discover::before {
@@ -47,8 +47,7 @@
 
     &__button-container {
         display: flex;
-        width: 93%;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-top: 60px;
     }
 
@@ -62,6 +61,7 @@
 .explore-img-container {
 
     position: relative;
+    z-index: -1;
 
     &__ellipse-blue {
         display: flex;
@@ -71,7 +71,7 @@
         height: 366px;
         width: 366px;
         border-radius: 50%;
-        background-color: #1234E1;
+        background-color: #1234E8;
     }
 
     &__ellipse-white {

@@ -13,8 +13,10 @@ const NavBar = () => {
                 <img src={logo} alt='logo' />
                 <Navigation className='nav-container__nav-bar' />
                 <article className='nav-container__login'>
+                    <button className='nav-container__user-button'>
                     <img src={user} className='nav-container__userLogo' alt='logo' />
                     <span>Login</span>
+                    </button>
                     <Button type='blue' className='nav-container__button'>Start trading</Button>
                 </article>
             </nav>
