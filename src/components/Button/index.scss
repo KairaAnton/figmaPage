@@ -1,21 +1,41 @@
-.blue-btn {
-    background-color: #1234E8;
-    border: none;
+%btn{
     border-radius: 5px;
-    color: #FFFFFF;
-    padding: 21px 56px 20px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 14px;
-}
-
-.white-btn {
-    background-color: #FFFFFF;
-    border: 2px solid #1234E8;
-    border-radius: 5px;
-    color: #1234E8;
     padding: 21px 55px 20px;
     font-weight: 600;
     font-size: 14px;
     line-height: 14px;
+    z-index: 1;
+    
+}
+
+%btn-hover{
+    cursor: pointer;
+    background-color: green;
+    border-color: white;
+    color: #FFFFFF;
+    transition-duration: 2s;
+}
+
+.blue-btn {
+    @extend %btn;
+    background-color: #1234E8;
+    border: none;
+    color: #FFFFFF;
+   
+    
+}
+
+.blue-btn:hover{
+    @extend %btn-hover
+}
+
+.white-btn:hover{
+    @extend %btn-hover
+}
+
+.white-btn {
+    @extend %btn;
+    background-color: #FFFFFF;
+    border: 2px solid #1234E8;
+    color: #1234E8;
 }

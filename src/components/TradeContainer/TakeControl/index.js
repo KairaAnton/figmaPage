@@ -25,7 +25,7 @@ const TakeControl = () => {
                         <li>Alerts on price movements, Change % & Traders’ Sentiments</li>
                     </ul>
                     <div className='content-container__button-container'>
-                        <Button type='white' >Go to Risk Manangement</Button>
+                        <Button type='white' className='content-container__button-left'>Go to Risk Manangement</Button>
                         <Button type='white' className='content-container__button-right' >Go to Alerts</Button>
                     </div>
                 </article>

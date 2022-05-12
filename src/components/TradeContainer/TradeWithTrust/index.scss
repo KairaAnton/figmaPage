@@ -42,7 +42,7 @@ $flex-display: flex;
         @extend %img-absolute;
         width: 328px;
         height: 420px;
-        right: -100px;
+        right: -85px;
     }
 
     &__rules-container {
@@ -67,6 +67,6 @@ $flex-display: flex;
     }
 
     &__button{
-        z-index:-2;
+        background: none;
     }
 }

@@ -3,12 +3,7 @@
     &__container {
         display: flex;
         justify-content: space-between;
-        
     }
-
-
-
-
 }
 
 .control-img-container {
@@ -47,6 +42,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    margin-right: 130px;
+    
 
 
     &__span-container {

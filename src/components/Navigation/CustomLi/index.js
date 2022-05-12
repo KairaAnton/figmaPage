@@ -1,16 +1,17 @@
 import React from 'react';
 import ArrowToDown from '../../ArrowToDown';
 import SubNav from '../SubNav';
-import styles from './CustomLi.module.scss';
- 
-const CustomLi = ({children}) => {
-    
+import './index.scss';
+
+const CustomLi = ({ children }) => {
+
     return (
-        <li className={styles.navLi}>{children} <ArrowToDown />
-                <SubNav className={styles.subNav} />
-            </li>
+        <li className='nav-li'>{children}
+            <ArrowToDown className='nav-li__arrow' />
+            <SubNav className='nav-li__sub-nav' />
+        </li>
     );
 }
- 
- 
+
+
 export default CustomLi;
