@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import monitor from '../../../images/monitor.png'
 import Button from '../../Button';
 import TextParagraph from '../../TextParagraph';
@@ -6,6 +7,8 @@ import TextTitle from '../../TextTitle';
 import './index.scss';
 
 const TraderGuide = () => {
+const {h,p,btnContent} = useSelector(state=>state.content.tradersGuide);
+
     return (
         <section className='trader-guide'>
             <div className='trader-guide__container _container'>
@@ -14,9 +17,9 @@ const TraderGuide = () => {
                     <img src={monitor} alt='logo' />
                 </article>
                 <article className='trader-guide__content'>
-                    <TextTitle>Trader's Guide</TextTitle>
-                    <TextParagraph className='trader-guide__paragraph'>Discover the basics of CFD trading and understand commonly-used terms by accessing our free and intuitive video guide.</TextParagraph>
-                    <Button type='white' >Watch Videos</Button>
+                    <TextTitle>{h}</TextTitle>
+                    <TextParagraph className='trader-guide__paragraph'>{p}</TextParagraph>
+                    <Button type='white' >{btnContent}</Button>
                 </article>
                 <div className='trader-guide__right-ellipse'/>
             </div>

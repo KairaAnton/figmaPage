@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Button from '../../Button';
 import TextParagraph from '../../TextParagraph';
 import TextTitle from '../../TextTitle';
@@ -6,16 +7,18 @@ import './index.scss';
 import TradingList from './TradingList';
 
 const Trading = () => {
+const {h,p,btnContent:{btnLeft, btnRight}}= useSelector(state=>state.content.trading)
+
     return (
         <section className='trading'>
             <div className='trading__container _container'>
-                <TextTitle className='trading__h1'>Trading at your fingertips</TextTitle>
-                <TextParagraph className='trading__paragraph'>Trade anywhere, anytime using our various platforms.</TextParagraph>
+                <TextTitle className='trading__h1'>{h}</TextTitle>
+                <TextParagraph className='trading__paragraph'>{p}</TextParagraph>
                 <TradingList />
                 <article className='trading__button-container'>
-                    <Button type='blue' >Start Trading Now</Button>
+                    <Button type='blue' >{btnLeft}</Button>
                     <span>or</span>
-                    <Button type='white' >Try Free Demo</Button>
+                    <Button type='white' >{btnRight}</Button>
                 </article>
             </div>
         </section>

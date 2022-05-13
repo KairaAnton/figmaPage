@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import firstLphone from '../../../images/firstLphone.png';
 import firstRphone from '../../../images/firstRphone.png';
 import Button from '../../Button';
@@ -6,6 +7,9 @@ import TextTitle from '../../TextTitle';
 import './index.scss';
 
 const TakeControl = () => {
+    const { h, p, list, btnContent: { btnLeft, btnRight } } = useSelector(state => state.content.takeControl);
+    const renderList = list.map(el => <li key={el}>{el}</li>);
+
     return (
         <section className='take-controle'>
             <div className='take-controle__container _container'>
@@ -15,23 +19,17 @@ const TakeControl = () => {
                     <img src={firstRphone} alt='logo' className='control-img-container__right-img' />
                 </article>
                 <article className='content-container'>
-                    <TextTitle>Take Control</TextTitle>
-                    <span className='content-container__span-container'>Use our advanced tools and features to gain control on your account:</span>
-                    <ul className='content-container__list'>
-                        <li>Stop Limit / Stop Loss / Trailing Stop</li>
-                        <li>Guaranteed Stop</li>
-                        <li>Negative balance protection</li>
-                        <li>FREE email & push notifications on market events</li>
-                        <li>Alerts on price movements, Change % & Traders’ Sentiments</li>
-                    </ul>
+                    <TextTitle>{h}</TextTitle>
+                    <span className='content-container__span-container'>{p}</span>
+                    <ul className='content-container__list'>{renderList}</ul>
                     <div className='content-container__button-container'>
-                        <Button type='white' className='content-container__button-left'>Go to Risk Manangement</Button>
-                        <Button type='white' className='content-container__button-right' >Go to Alerts</Button>
+                        <Button type='white' className='content-container__button-left'>{btnLeft}</Button>
+                        <Button type='white' className='content-container__button-right' >{btnRight}</Button>
                     </div>
                 </article>
             </div>
         </section>
     );
-}
+};
 
 export default TakeControl;

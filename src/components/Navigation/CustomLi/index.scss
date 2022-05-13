@@ -20,6 +20,8 @@
         left: 0;
         transition-duration: 1.5s;
         transform: rotateY(90deg);
+        background-color: white;
+        border-radius: 3px;
     }
 
     &__sub-nav li {
@@ -39,11 +41,14 @@
     &__sub-nav li {
         transition-duration: 1.5s;
         cursor: pointer;
+        padding: 3px;
+        border-radius: 3px;
     }
 
     &__sub-nav li:hover {
         transition-duration: 1.5s;
         background-color: green;
+        
     }
 
     &__arrow {

@@ -1,14 +1,3 @@
-%div-language {
-    content: '';
-    display: inline-block;
-    height: 14px;
-    width: 24px;
-    margin-right: 5px;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
 .search-bar {
     display: flex;
     max-height: 45px;
@@ -78,6 +67,7 @@
 
     &__select {
         background-color: #FFFFFF;
+        border-radius: 3px;
         opacity: 0;
         position: absolute;
         visibility: hidden;
@@ -85,6 +75,7 @@
         z-index: 99;
         transition-duration: 1.5s;
         transform: rotateY(90deg);
+        
     }
 
     &__select div:hover {
@@ -95,28 +86,39 @@
     &__select div {
         display: flex;
         transition-duration: 1.5s;
+        border-radius: 3px;
+    }
 
+    &__div-Ru::before,
+    &__div-uk::before,
+    &__div-usa::before,
+    &__div-pl::before {
+        content: '';
+        display: inline-block;
+        height: 14px;
+        width: 24px;
+        margin-right: 5px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3px;
+        border-radius: 3px;
     }
 
     &__div-Ru::before {
-        @extend %div-language;
         background-image: url('../../../images/Ru.png');
     }
 
 
     &__div-uk::before {
-        @extend %div-language;
         background-image: url('../../../images/uk.png');
     }
 
 
     &__div-usa::before {
-        @extend %div-language;
         background-image: url('../../../images/usa.png');
     }
 
     &__div-pl::before {
-        @extend %div-language;
         background-image: url('../../../images/pl.png');
     }
 }

@@ -4,24 +4,26 @@ import TextTitle from '../../TextTitle';
 import secondPhones from '../../../images/secondPhones.png'
 import Button from '../../Button';
 import './index.scss';
+import { useSelector } from 'react-redux';
 
 
 const ExploreMarkets = () => {
+    const { h, p, discover, news, btnContent: { btnLeft, btnRight } } = useSelector(state => state.content.exploreMarkets);
 
 
     return (
         <section className='explore'>
             <div className='explore__container _container'>
                 <article className='content-container'>
-                    <TextTitle>Explore Markets</TextTitle>
-                    <TextParagraph className='content-container__paragraph' >Trade the world’s most popular markets and explore endless trading opportunities. We offer +2000 financial instruments, FREE real time quotes and dedicated round-the-clock customer support.</TextParagraph>
+                    <TextTitle>{h}</TextTitle>
+                    <TextParagraph className='content-container__paragraph' >{p}</TextParagraph>
                     <div className='content-container__span' >
-                        <span className='content-container__discover'>Discover our Sector Indices</span><br />
-                        <span className='content-container__news'>News and Market Insights</span>
+                        <span className='content-container__discover'>{discover}</span><br />
+                        <span className='content-container__news'>{news}</span>
                     </div>
                     <div className='content-container__button-container'>
-                        <Button type='white' >Learn More</Button>
-                        <Button type='white' className='content-container__button-right' >Watch Video</Button>
+                        <Button type='white' >{btnLeft}</Button>
+                        <Button type='white' className='content-container__button-right' >{btnRight}</Button>
                     </div>
                 </article>
                 <article className='explore-img-container'>

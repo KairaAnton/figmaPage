@@ -4,9 +4,12 @@ import Navigation from '../../Navigation';
 import logo from './../../../images/logo.png';
 import user from './../../../images/user.png';
 import Button from '../../Button';
+import { useSelector } from 'react-redux';
 
 
 const NavBar = () => {
+    const {navBtnContent} = useSelector(state=>state.content)
+
     return (
         <section className='nav-container'>
             <nav className='nav-container__header-nav _container'>
@@ -17,7 +20,7 @@ const NavBar = () => {
                     <img src={user} className='nav-container__userLogo' alt='logo' />
                     <span>Login</span>
                     </button>
-                    <Button type='blue' className='nav-container__button'>Start trading</Button>
+                    <Button type='blue' className='nav-container__button'>{navBtnContent}</Button>
                 </article>
             </nav>
         </section>
