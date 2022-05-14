@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/figmaPage/static/css/main.b7d5e7a6.css",
-    "main.js": "/figmaPage/static/js/main.04519fda.js",
+    "main.js": "/figmaPage/static/js/main.3d9ab276.js",
     "static/media/secondPhones.png": "/figmaPage/static/media/secondPhones.cf70ca8d8521456ab3ae.png",
     "static/media/monitor.png": "/figmaPage/static/media/monitor.58509809605033c1f3fe.png",
     "static/media/noteLeft.png": "/figmaPage/static/media/noteLeft.28012fb2c2ace1c26d52.png",
@@ -27,10 +27,10 @@
     "static/media/bpay.svg": "/figmaPage/static/media/bpay.05dbde00433436b7185ccf57d28d5bec.svg",
     "index.html": "/figmaPage/index.html",
     "main.b7d5e7a6.css.map": "/figmaPage/static/css/main.b7d5e7a6.css.map",
-    "main.04519fda.js.map": "/figmaPage/static/js/main.04519fda.js.map"
+    "main.3d9ab276.js.map": "/figmaPage/static/js/main.3d9ab276.js.map"
   },
   "entrypoints": [
     "static/css/main.b7d5e7a6.css",
-    "static/js/main.04519fda.js"
+    "static/js/main.3d9ab276.js"
   ]
 }
