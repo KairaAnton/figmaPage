@@ -1,4 +1,6 @@
-%btn {
+.blue,
+.blue-border,
+.gray-border  {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +13,10 @@
     z-index: 1;
 }
 
-%btn-hover {
+.blue:hover,
+.blue-border:hover,
+.gray-border:hover
+ {
     cursor: pointer;
     background-color: green;
     border-color: white;
@@ -19,8 +24,7 @@
     transition-duration: 2s;
 }
 
-.blue-btn {
-    @extend %btn;
+.blue {
     background-color: #1234E8;
     border: none;
     color: #FFFFFF;
@@ -28,17 +32,15 @@
 
 }
 
-.blue-btn:hover {
-    @extend %btn-hover
-}
-
-.white-btn:hover {
-    @extend %btn-hover
-}
-
-.white-btn {
-    @extend %btn;
+.blue-border {
     background-color: #FFFFFF;
     border: 2px solid #1234E8;
     color: #1234E8;
+}
+
+.gray-border{
+    border-color: #111111;
+    color: #111111;
+    opacity: .5;
+    margin-left: 40px;
 }
