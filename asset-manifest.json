@@ -1,15 +1,36 @@
 {
   "files": {
-    "main.css": "/figmaPage/static/css/main.43d042d7.css",
-    "main.js": "/figmaPage/static/js/main.cfd6c3b5.js",
-    "static/js/787.573ea6bb.chunk.js": "/figmaPage/static/js/787.573ea6bb.chunk.js",
+    "main.css": "/figmaPage/static/css/main.b7d5e7a6.css",
+    "main.js": "/figmaPage/static/js/main.04519fda.js",
+    "static/media/secondPhones.png": "/figmaPage/static/media/secondPhones.cf70ca8d8521456ab3ae.png",
+    "static/media/monitor.png": "/figmaPage/static/media/monitor.58509809605033c1f3fe.png",
+    "static/media/noteLeft.png": "/figmaPage/static/media/noteLeft.28012fb2c2ace1c26d52.png",
+    "static/media/firstRphone.png": "/figmaPage/static/media/firstRphone.f8d65dcfb02753bb9cb6.png",
+    "static/media/noteRight.png": "/figmaPage/static/media/noteRight.8ddcc506800da6eaea8c.png",
+    "static/media/trusli.svg": "/figmaPage/static/media/trusli.5184e41ed2f204ab4034f0ecc4762f57.svg",
+    "static/media/mastercard.svg": "/figmaPage/static/media/mastercard.7e27aae79b28b11bf06635d1d1d102eb.svg",
+    "static/media/mybank.svg": "/figmaPage/static/media/mybank.7c84c74f20d288fa6551c51178065c12.svg",
+    "static/media/mb.svg": "/figmaPage/static/media/mb.d6d38755389ec920f13079e7a8378e1b.svg",
+    "static/media/firstLphone.png": "/figmaPage/static/media/firstLphone.12c2bb7402abc528da75.png",
+    "static/media/paypal.svg": "/figmaPage/static/media/paypal.1a254caf2ac5ee4ee0882eea814e85e0.svg",
+    "static/media/przelewy.svg": "/figmaPage/static/media/przelewy.287b0ce3bacb2007b24d651f0ae7ddd2.svg",
+    "static/media/visa.svg": "/figmaPage/static/media/visa.d0078b151cc86f4c81e398a0bff9fbf5.svg",
+    "static/media/giropay.svg": "/figmaPage/static/media/giropay.d6aca6e01e67efbb8b0a3780cd8bc166.svg",
+    "static/media/blik.svg": "/figmaPage/static/media/blik.1ff741c13e2bb50cdc170d9b023a0a46.svg",
+    "static/media/klarna.svg": "/figmaPage/static/media/klarna.ed64b9b818dabaf7fd5d6b4360964f0c.svg",
+    "static/media/skill.svg": "/figmaPage/static/media/skill.65a65c1f33b08972fc5d3fa2ae1c76b1.svg",
+    "static/media/deal.svg": "/figmaPage/static/media/deal.06801f390579d3803fa4671fdbca8784.svg",
+    "static/media/lock.png": "/figmaPage/static/media/lock.50bcf60376fd38b286ed.png",
+    "static/media/safe.png": "/figmaPage/static/media/safe.f279a94326ed645ebd92.png",
+    "static/media/big-support.png": "/figmaPage/static/media/big-support.d250fc90becefc159e62.png",
+    "static/media/transfer.svg": "/figmaPage/static/media/transfer.0e753109af1bd80e4deb3b3ad0569d56.svg",
+    "static/media/bpay.svg": "/figmaPage/static/media/bpay.05dbde00433436b7185ccf57d28d5bec.svg",
     "index.html": "/figmaPage/index.html",
-    "main.43d042d7.css.map": "/figmaPage/static/css/main.43d042d7.css.map",
-    "main.cfd6c3b5.js.map": "/figmaPage/static/js/main.cfd6c3b5.js.map",
-    "787.573ea6bb.chunk.js.map": "/figmaPage/static/js/787.573ea6bb.chunk.js.map"
+    "main.b7d5e7a6.css.map": "/figmaPage/static/css/main.b7d5e7a6.css.map",
+    "main.04519fda.js.map": "/figmaPage/static/js/main.04519fda.js.map"
   },
   "entrypoints": [
-    "static/css/main.43d042d7.css",
-    "static/js/main.cfd6c3b5.js"
+    "static/css/main.b7d5e7a6.css",
+    "static/js/main.04519fda.js"
   ]
 }
