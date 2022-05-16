@@ -12,6 +12,8 @@
   }
 
   &__left {
+    transform: scale(-1, 1);
+    opacity: .5;
     left: -1150px;
   }
 

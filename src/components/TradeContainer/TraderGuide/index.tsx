@@ -1,14 +1,13 @@
+import { FC } from 'react';
 import './index.scss';
 import { useAppSelector } from '../../../hooks';
-import monitor from '../../../images/monitor.png'
 import Button, { BtnType } from '../../Button';
 import TextParagraph from '../../TextParagraph';
 import TextTitle from '../../TextTitle';
-import { FC } from 'react';
 
 const TraderGuide: FC = () => {
     const { h, p, btnContent } = useAppSelector(state => state.content.tradersGuide);
-
+    const { monitor } = useAppSelector(state => state.images);
     return (
         <section className='trader-guide'>
             <div className='trader-guide__container _container'>

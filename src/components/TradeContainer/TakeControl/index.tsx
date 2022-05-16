@@ -1,14 +1,14 @@
 import { FC } from 'react';
 import './index.scss';
 import { useAppSelector } from '../../../hooks';
-import firstLphone from '../../../images/firstLphone.png';
-import firstRphone from '../../../images/firstRphone.png';
 import Button, { BtnType } from '../../Button';
 import TextTitle from '../../TextTitle';
 
 const TakeControl: FC = () => {
-    const { h, p, list, btnContent: { btnLeft, btnRight } } = useAppSelector(state => state.content.takeControl);
-    const renderList = list.map(el => <li key={el}>{el}</li>);
+    const { h, p, list,btnLeft, btnRight } = useAppSelector(state => state.content.takeControl);
+    const { firstLphone, firstRphone } = useAppSelector(state => state.images);
+
+    const renderList = list.map((el) => <li key={el}>{el}</li>);
 
     return (
         <section className='take-controle'>
@@ -23,8 +23,8 @@ const TakeControl: FC = () => {
                     <span className='content-container__span-container'>{p}</span>
                     <ul className='content-container__list'>{renderList}</ul>
                     <div className='content-container__button-container'>
-                        <Button type={BtnType.blueBorder} className='content-container__button-left'>{btnLeft}</Button>
-                        <Button type={BtnType.grayBorder} className='content-container__button-right' >{btnRight}</Button>
+                        <Button type={BtnType.blueBorder}>{btnLeft}</Button>
+                        <Button type={BtnType.grayBorder}>{btnRight}</Button>
                     </div>
                 </article>
             </div>

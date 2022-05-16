@@ -6,9 +6,9 @@ import TextTitle from '../../../TextTitle';
 
 
 const NordicList: FC = () => {
-    const { list } = useAppSelector(state => state.content.nordic)
+    const { listOne,listTwo,listThree } = useAppSelector(state => state.content.nordic);
     let keyLi = 0;
-
+    const list = [listOne,listTwo,listThree]
     const renderList = list.map(arrLi => <li key={keyLi++}>
         <TextTitle className='nordic-list__h1'>{arrLi[0]}</TextTitle>
         <TextTitle className='nordic-list__h2'>{arrLi[1]}</TextTitle>

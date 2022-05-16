@@ -39,8 +39,9 @@
 }
 
 .gray-border{
-    border-color: #111111;
-    color: #111111;
+    border-color:rgba(#111111, $alpha: .5) ;
+    color: rgba(#111111, $alpha: .5);
     opacity: .5;
     margin-left: 40px;
+    background-color: #FFFFFF;
 }

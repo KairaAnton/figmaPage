@@ -5,7 +5,7 @@ import { useAppSelector } from '../../hooks';
 
 
 const Navigation: FC = () => {
-    const content = useAppSelector(state => state.content.navText);
+    const {content} = useAppSelector(state => state.content.navText);
     const renderNav = content.map(str => <CustomLi key={str}>{str}</CustomLi>);
 
     return (

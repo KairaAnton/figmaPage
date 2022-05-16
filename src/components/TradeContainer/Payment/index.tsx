@@ -1,23 +1,14 @@
 import { FC } from 'react';
 import './index.scss';
 import { useAppSelector } from '../../../hooks';
-import visa from '../../../images/visa.svg';
-import mastercard from '../../../images/mastercard.svg';
-import paypal from '../../../images/paypal.svg';
-import transfer from '../../../images/transfer.svg';
-import skill from '../../../images/skill.svg';
-import deal from '../../../images/deal.svg';
-import bpay from '../../../images/bpay.svg';
-import klarna from '../../../images/klarna.svg';
-import giropay from '../../../images/giropay.svg';
-import trusli from '../../../images/trusli.svg';
-import przelewy from '../../../images/przelewy.svg';
-import mb from '../../../images/mb.svg';
-import mybank from '../../../images/mybank.svg';
-import blik from '../../../images/blik.svg';
+
 
 const Payment: FC = () => {
-    const content  = useAppSelector(state => state.content.payment)
+    const {content} = useAppSelector(state => state.content.payment);
+    const { visa, mastercard, paypal, transfer,
+        skill, deal, bpay, klarna, giropay, trusli,
+        przelewy, mb, mybank, blik } = useAppSelector(state => state.images);
+
     return (
         <section className='payment'>
             <article className='payment__background'>

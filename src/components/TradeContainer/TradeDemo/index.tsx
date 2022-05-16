@@ -1,7 +1,4 @@
 import './index.scss';
-import noteLeft from '../../../images/noteLeft.png';
-import noteRight from '../../../images/noteRight.png';
-import arrow from '../../../images/arrow.png';
 import TextTitle from '../../TextTitle';
 import TextParagraph from '../../TextParagraph';
 import Button, { BtnType } from '../../Button';
@@ -9,12 +6,13 @@ import { useAppSelector } from '../../../hooks';
 import { FC } from 'react';
 
 const TradeDemo: FC = () => {
-    const { h, p, btnContent: { btnLeft, btnRight } } = useAppSelector(state => state.content.tradeDemo)
+    const { h, p, btnLeft, btnRight } = useAppSelector(state => state.content.tradeDemo);
+    const { noteRight, arrow } = useAppSelector(state => state.images);
 
     return (
         <section className='trade-demo'>
             <div className="trade-demo__container _container">
-                <img src={noteLeft} alt='logo' className='trade-demo__img trade-demo__left' />
+                <img src={noteRight} alt='logo' className='trade-demo__img trade-demo__left' />
                 <img src={noteRight} alt='logo' className='trade-demo__img trade-demo__right' />
                 <div className='trade-demo__ellipse' />
                 <div className='trade-demo__content'>

@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import './index.scss';
-import TextParagraph from '../../TextParagraph';
-import logo from './../../../images/logo.png';
-import Navigation from '../../Navigation';
 import { useAppSelector } from '../../../hooks';
+import TextParagraph from '../../TextParagraph';
+import Navigation from '../../Navigation';
 
 const FooterNav: FC = () => {
-    const { h, p } = useAppSelector(state => state.content.footerNav)
+    const { h, p } = useAppSelector(state => state.content.footerNav);
+    const { logo } = useAppSelector(state => state.images);
 
     return (
         <section className='footer-nav'>

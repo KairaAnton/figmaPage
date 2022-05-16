@@ -13,7 +13,7 @@ interface IProps {
     children: ReactNode
 }
 
-const Button: FC<IProps> = ({ className, type, children }) => {    
+const Button: FC<IProps> = ({ className, type, children }) => {
     return (
         <button className={`${type} ${className}`}
         >{children}</button>

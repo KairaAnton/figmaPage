@@ -1,14 +1,15 @@
 import { FC, useState } from 'react';
 import './index.scss';
-import ArrowToDown from '../../ArrowToDown';
-import glass from './../../../images/magnifyingGlass.png';
 import { useAppSelector } from '../../../hooks';
+import ArrowToDown from '../../ArrowToDown';
 
 const SerchBar: FC = () => {
-    const {languages} = useAppSelector(state=>state.content)
-    const renderDiv = (elem:string) => {
+    const { languages } = useAppSelector(state => state.content.language);
+    const { glass } = useAppSelector(state => state.images);
+    const renderDiv = (elem: string) => {
         return <div key={elem} className={`search-bar__div-${elem}`} >{elem}</div>
     };
+    
     const [select, setSelect] = useState(renderDiv(languages[0]));
     const renderFunk = languages.map(elem => {
         const changeLanguage = <div onClick={() => setSelect(renderDiv(elem))}

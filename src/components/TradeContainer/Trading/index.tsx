@@ -1,5 +1,5 @@
 import './index.scss';
-import  { FC } from 'react';
+import { FC } from 'react';
 import { useAppSelector } from '../../../hooks';
 import Button, { BtnType } from '../../Button';
 import TextParagraph from '../../TextParagraph';
@@ -7,7 +7,7 @@ import TextTitle from '../../TextTitle';
 import TradingList from './TradingList';
 
 const Trading: FC = () => {
-const {h,p,btnContent:{btnLeft, btnRight}}= useAppSelector(state=>state.content.trading)
+    const { h, p, btnLeft, btnRight } = useAppSelector(state => state.content.trading);
 
     return (
         <section className='trading'>

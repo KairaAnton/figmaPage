@@ -1,15 +1,14 @@
 import { FC } from 'react';
 import './index.scss';
+import { useAppSelector } from '../../../hooks';
 import TextParagraph from '../../TextParagraph';
 import TextTitle from '../../TextTitle';
-import secondPhones from '../../../images/secondPhones.png'
 import Button, { BtnType } from '../../Button';
-import { useAppSelector } from '../../../hooks';
 
 
 const ExploreMarkets: FC = () => {
-    const { h, p, discover, news, btnContent: { btnLeft, btnRight } } = useAppSelector(state => state.content.exploreMarkets);
-
+    const { h, p, discover, news, btnLeft, btnRight } = useAppSelector(state => state.content.exploreMarkets);
+    const { secondPhones } = useAppSelector(state => state.images);
 
     return (
         <section className='explore'>
@@ -23,7 +22,7 @@ const ExploreMarkets: FC = () => {
                     </div>
                     <div className='content-container__button-container'>
                         <Button type={BtnType.blueBorder} >{btnLeft}</Button>
-                        <Button type={BtnType.grayBorder} className='content-container__button-right' >{btnRight}</Button>
+                        <Button type={BtnType.grayBorder}>{btnRight}</Button>
                     </div>
                 </article>
                 <article className='explore-img-container'>

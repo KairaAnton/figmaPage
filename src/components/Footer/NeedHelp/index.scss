@@ -24,11 +24,14 @@
         font-family: 'Montserrat', sans-serif;
     }
 
-    &__button {
-        border: none;
-    }
 
     &__button img {
+        height: 24px;
+        width: 24px;
+        margin-right: 10px;
+    }
+
+    &__button img:hover {
         height: 24px;
         width: 24px;
         margin-right: 10px;
