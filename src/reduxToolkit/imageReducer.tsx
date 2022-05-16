@@ -22,9 +22,9 @@ import firstLphone from '../images/firstLphone.png';
 import firstRphone from '../images/firstRphone.png';
 import secondPhones from '../images/secondPhones.png';
 import monitor from '../images/monitor.png'
-import android from '../images/android.png';
-import windows from '../images/windows.png';
-import web from '../images/web.png';
+import androidImg from '../images/android.png';
+import windowsImg from '../images/windows.png';
+import webImg from '../images/web.png';
 import support from '../images/support.png';
 import bigSupport from '../images/big-support.png';
 import noteRight from '../images/noteRight.png';
@@ -39,7 +39,7 @@ interface IState {
 const initialState: IState = {
     logo, user, safe, column, lock, visa, mastercard, paypal, transfer, skill, deal, bpay,
     klarna, giropay, trusli, przelewy, mb, mybank, blik, firstLphone, firstRphone,glass,
-    secondPhones, monitor, android, web, windows, support, bigSupport, noteRight, arrow
+    secondPhones, monitor, androidImg, webImg, windowsImg, support, bigSupport, noteRight, arrow
 }
 
 export default createReducer(initialState, {});

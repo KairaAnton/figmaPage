@@ -2,14 +2,18 @@ import { createReducer } from "@reduxjs/toolkit";
 import { ReactNode } from "react";
 
 
-type typeState = string | string[] | ReactNode
 
-type II = {
-    [key: string]: typeState
+
+interface II {
+    btnContent?: string, languages?: string[], content?: string[],
+    h?: string, p?: string, btnLeft?: string, btnRight?: string,
+    rules?: string[], contentStr?: string, list?: string[], discover?: string,
+    news?: string, listOne?: string[], listTwo?: string[], listThree?: string[],
+    android?: string, windows?: string, web?: string, pSpan?: ReactNode
 }
 
-type IState = {
-    [key: string]: II
+interface IState {
+    [key: string]: II,
 }
 
 const initialState: IState = {
@@ -31,7 +35,7 @@ const initialState: IState = {
         ],
         btnContent: 'Read More About Us'
     },
-    payment: { content: '* Some of the payment methods may not be available in your country' },
+    payment: { contentStr: '* Some of the payment methods may not be available in your country' },
     takeControl: {
         h: 'Take Control',
         p: 'Use our advanced tools and features to gain control on your account:',
@@ -81,7 +85,7 @@ const initialState: IState = {
     },
     footerNav: {
         h: 'Уведомление о рисках:',
-        p: <span>Операции, предлагаемые данным сайтом, могут осуществляться только совершеннолетними (18 +) и полностью дееспособными лицами.Операции с
+        pSpan: <span>Операции, предлагаемые данным сайтом, могут осуществляться только совершеннолетними (18 +) и полностью дееспособными лицами.Операции с
             финансовыми инструментами, которые выполняются посредством этого сайта, могут относиться к операциям с высоким уровнем риска и повлечь за собой
             потерю вложенных средств.Перед принятием решения о начале торговли вы обязаны ознакомиться с Условиями и соглашениями об оказании услуг, а также с
             <a className='footer-nav__a' href='/#' > Уведомлением о рисках</a >,
