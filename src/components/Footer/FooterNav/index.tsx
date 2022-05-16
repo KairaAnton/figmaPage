@@ -5,7 +5,7 @@ import TextParagraph from '../../TextParagraph';
 import Navigation from '../../Navigation';
 
 const FooterNav: FC = () => {
-    const { h, p } = useAppSelector(state => state.content.footerNav);
+    const { h, pSpan } = useAppSelector(state => state.content.footerNav);
     const { logo } = useAppSelector(state => state.images);
 
     return (
@@ -17,7 +17,13 @@ const FooterNav: FC = () => {
                 </article>
                 <article className='footer-nav__risks'>
                     <h3>{h}</h3>
-                    <TextParagraph className='footer-nav__paragraph'>{p}</TextParagraph>
+                    <TextParagraph className='footer-nav__paragraph'>
+                        <span>{pSpan[0]} <a className='footer-nav__a' href='/#'>{pSpan[1]}</a>
+                            <a className='footer-nav__a' href='/#'> {pSpan[2]}</a>,
+                            <a className='footer-nav__a' href='/#'> {pSpan[3]}</a> и
+                            <a className='footer-nav__a' href='/#'>{pSpan[4]}</a>.
+                        </span>
+                    </TextParagraph>
                 </article>
             </div>
         </section>

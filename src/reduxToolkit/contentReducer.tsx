@@ -1,5 +1,4 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { ReactNode } from "react";
 
 
 
@@ -9,7 +8,7 @@ interface II {
     h?: string, p?: string, btnLeft?: string, btnRight?: string,
     rules?: string[], contentStr?: string, list?: string[], discover?: string,
     news?: string, listOne?: string[], listTwo?: string[], listThree?: string[],
-    android?: string, windows?: string, web?: string, pSpan?: ReactNode
+    android?: string, windows?: string, web?: string, pSpan?: string[]
 }
 
 interface IState {
@@ -85,12 +84,11 @@ const initialState: IState = {
     },
     footerNav: {
         h: 'Уведомление о рисках:',
-        pSpan: <span>Операции, предлагаемые данным сайтом, могут осуществляться только совершеннолетними (18 +) и полностью дееспособными лицами.Операции с
-            финансовыми инструментами, которые выполняются посредством этого сайта, могут относиться к операциям с высоким уровнем риска и повлечь за собой
-            потерю вложенных средств.Перед принятием решения о начале торговли вы обязаны ознакомиться с Условиями и соглашениями об оказании услуг, а также с
-            <a className='footer-nav__a' href='/#' > Уведомлением о рисках</a >,
-            <a className='footer-nav__a' href='/#'> Политикой конфиденциальности</a>, <a className='footer-nav__a' href='/#'>Политикой AML</a> и
-            < a className='footer-nav__a' href='/#' > Политикой KYC</ a>.</span >
+        pSpan: [`Операции, предлагаемые данным сайтом, могут осуществляться только совершеннолетними (18 +)
+         и полностью дееспособными лицами.Операции с финансовыми инструментами, которые выполняются посредством этого сайта,
+          могут относиться к операциям с высоким уровнем риска и повлечь за собой потерю вложенных средств.Перед принятием решения
+         о начале торговли вы обязаны ознакомиться с, Условиями и соглашениями об оказании услуг, а также с`,
+            'Уведомлением о рисках', 'Политикой конфиденциальности', 'Политикой AML', ' Политикой KYC']
     },
     aboutUs: {
         content: ['Neroport business center in 2300 Copenhagen, Denmark', '© 2015-2021']
