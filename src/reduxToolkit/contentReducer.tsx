@@ -1,7 +1,4 @@
-import { createReducer } from "@reduxjs/toolkit";
-
-
-
+import { createSlice } from "@reduxjs/toolkit";
 
 interface II {
     btnContent?: string, languages?: string[], content?: string[],
@@ -95,4 +92,10 @@ const initialState: IState = {
     }
 };
 
-export default createReducer(initialState, {});
+const contentSlice = createSlice({
+    name: 'content',
+    initialState,
+    reducers: {}
+});
+
+export default contentSlice.reducer

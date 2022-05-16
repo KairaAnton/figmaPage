@@ -1,4 +1,4 @@
-import { createReducer } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import logo from "../images/logo.png";
 import user from '../images/user.png';
 import safe from '../images/safe.png';
@@ -42,4 +42,11 @@ const initialState: IState = {
     secondPhones, monitor, androidImg, webImg, windowsImg, support, bigSupport, noteRight, arrow
 }
 
-export default createReducer(initialState, {});
+const imageSlice = createSlice({
+    name: 'image',
+    initialState,
+    reducers: {}
+});
+
+
+export default imageSlice.reducer;
